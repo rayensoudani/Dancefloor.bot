@@ -41,7 +41,7 @@ class Bot(BaseBot):
                   wallet = (await self.highrise.get_wallet()).content
                   await self.highrise.chat(f"The bot wallet contains {wallet[0].amount} {wallet[0].type}")
                 
-            if message.lower().startswith("!tipme ") and user.username== "____Rayen____" or user.username == "superhotgirll" or user.username == "eva__63":
+            if message.lower().startswith("!tipme ") and user.username== "____Rayen____" or user.username == "superhotgirll" or user.username == "ShoKytoo":
                 try:
                     amount_str = message.split(" ")[1]
                     amount = int(amount_str)
