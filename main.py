@@ -157,11 +157,11 @@ class Bot(BaseBot):
                       return
                   for bar in tip:
                       await self.highrise.tip_user(room_user.id, bar)
-            elif message.startswith("!dancefloor 1"):
+            elif message.startswith("!dancefloor1"):
                 self.pos1 = await self.get_actual_pos(user.id)
                 await self.highrise.chat(f"🎵Dancefloor 1 Configured: [{self.pos1}]")
 
-            elif message.startswith("!dancefloor 2"):
+            elif message.startswith("!dancefloor2"):
 
                 self.pos2 = await self.get_actual_pos(user.id)
                 await self.highrise.chat(f"🎵Dancefloor 2 Configured: [{self.pos2}]")
@@ -179,7 +179,7 @@ class Bot(BaseBot):
                     self.pos1 = None
                     self.pos2 = None
                 else:
-                    await self.highrise.chat("❌️use: !dancefloor 1 and !dancefloor 2 to set up the dancefloor!")
+                    await self.highrise.chat("❌️use: !dancefloor1 and !dancefloor2 to set up the dancefloor!")
 
 
 
