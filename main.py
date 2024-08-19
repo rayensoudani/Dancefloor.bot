@@ -47,7 +47,7 @@ class Bot(BaseBot):
             await self.highrise.teleport(user.id, Position(6.0 , 14.25 , 3.0))
 
         if message.startswith("!dj") or message.startwith("/dj"):
-          if user.username == "superhotgirll":
+          if user.username == "Shokytoo":
             await self.highrise.teleport(user.id, Position(6.0 , 14.25 , 3.0))
 
         if message.startswith("!vip") or message.startwith("/vip"):
