@@ -358,7 +358,7 @@ class Bot(BaseBot):
                     await asyncio.gather(*emote_tasks)
                     await asyncio.sleep(emote_time)
 
-                await asyncio.sleep(0.1)
+                await asyncio.sleep(10)
 
             except Exception as e:
                 print(f"{e}")
