@@ -364,10 +364,13 @@ class Bot(BaseBot):
                 print(f"{e}")
 
 
-
+    
     async def on_user_join(self, user: User, Position):
         print(f"{user.username} joined the room")
 
+    async def on_whisper(self, user: User, message: str) -> None:
+        print(f"{user.username} whispered: {message}")
+        
     async def on_user_leave(self, user: User):
 
         try:
